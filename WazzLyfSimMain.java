@@ -1,4 +1,4 @@
-package wazzlyfsimmain;
+package oop1;
 
 
 
@@ -26,7 +26,7 @@ public class WazzLyfSimMain {
         clearConsole();
         System.out.println("\n==============================================");
         System.out.println("               Login Successful!              ");
-        System.out.println("==============================================");
+
 
         anotherCharacter(scanner);
             
@@ -50,7 +50,9 @@ public class WazzLyfSimMain {
                         System.exit(0);
 
                     case "E":
-                        System.out.println("Logging out..... Until Next Game!!! ");
+                        System.out.println("\n============================================== ");
+                        System.out.println("     Logging out..... Until Next Game!!! ");
+                        System.out.println("============================================== ");
                         System.exit(0);
 
                     default:
@@ -75,13 +77,14 @@ scanner.close();
         String nickname;
     
         do {
+            System.out.println("==============================================");
             System.out.print("\nEnter A Nickname: ");
             nickname = scanner.nextLine();
     
             if (nickname.isEmpty()) {
-                System.out.println("============================================== ");
-                System.out.println("              Please Don't Skip !!! ");
-                System.out.println("============================================== ");
+                
+                System.out.println("\n============================================== ");
+                System.out.println("             Please Don't Skip !!! ");
             }
     
         } while (nickname.isEmpty());
@@ -623,7 +626,7 @@ class WazzLyfSimClass extends PersonalityAttributes implements Customizable, Dis
         switch (getTown()) {
             case "Maximus":
                 
-                /* System.out.println("""
+                 System.out.println("""
                  In the heart of Maximus, a community flourishes
                  around the diligent efforts of its farmers. Day in
                  and day out, they work the fertile lands, particularly
@@ -645,13 +648,13 @@ class WazzLyfSimClass extends PersonalityAttributes implements Customizable, Dis
                  to their crops and coming together in celebration, the
                  people of (town name) find fulfillment in the shared rhythm
                  of their agricultural existence.
-                 """);*/
+                 """);
                  
                 System.out.println("Enjoy the scenic views and vibrant community events.");
                 break;
             case "Gabusan":
                 
-                /* System.out.println("""
+                 System.out.println("""
                  Nestled along the azure coastline, Gabusan embodies
                  tranquility with the soothing lull of waves against
                  the shore and powdery white sand, attracting those
@@ -673,13 +676,13 @@ class WazzLyfSimClass extends PersonalityAttributes implements Customizable, Dis
                  As the sun sets over Gabusan, residents gather to share
                  stories and laughter, a testament to the harmonious
                  coexistence of nature's gifts and responsible human stewardship.
-                 """); */
+                 """); 
                  
                 System.out.println("\nNavigate through the bustling streets and pursue your dreams.");
                 break;
             case "Central Key":
                 
-                /* System.out.println("""
+                 System.out.println("""
                  In the daylight hours, Central Key bustles with the
                  vibrant energy of urban life. Professionals swarm the
                  towering skyscrapers, defining the cityscape as they
@@ -705,7 +708,7 @@ class WazzLyfSimClass extends PersonalityAttributes implements Customizable, Dis
                  a complex picture of Central Key, where the stark divide
                  between the wealthy and the underprivileged is an inherent
                  part of the city's narrative.
-                  """);*/
+                  """);
                  
                 System.out.println("\nEmbark on a magical journey and embrace the extraordinary.");
                 break;
