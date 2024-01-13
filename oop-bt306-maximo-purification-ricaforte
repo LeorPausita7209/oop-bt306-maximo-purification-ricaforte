@@ -79,7 +79,8 @@ scanner.close();
             nickname = scanner.nextLine();
     
             if (nickname.isEmpty()) {
-                System.out.println("Please Don't Skip !!! ");
+                System.out.println("============================================== ");
+                System.out.println("              Please Don't Skip !!! ");
                 System.out.println("============================================== ");
             }
     
